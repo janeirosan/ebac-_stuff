@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.2] - 2024-06-04
 ### Added
 - Added new branches for exercises
+- Added index.html on additional branch
 
 ### Removed
 - Removed test files from main
