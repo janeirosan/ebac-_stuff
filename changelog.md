@@ -19,14 +19,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.3] - 2024-06-05
 ### Changed
-- Switched input to button tag after assignment feedback.
+- Switched input to button tag after assignment feedback
 
 ## [0.0.4] - 2024-06-07
 ### Added
-- Added branch (exercício_css) and files (index.html, main.css, assets folder) for CSS assignment.
+- Added branch (exercício_css) and files (index.html, main.css, assets folder) for CSS assignment
 
 ### Changed
 - Updated changelog.md
 
 ### Removed
-- Removed files from cloned branch (exercício_html).
+- Removed files from cloned branch (exercício_html)
+
+## [0.0.45]
+### Changed
+- Updated main.css based on feedback
