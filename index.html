@@ -2,239 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portal de notícias</title>
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="utils.css">
+    <title>Pokémon Gym Challenge 2024 - Galar Region</title>
 </head>
 <body>
-    <header>
+    <header></header>
+    <main>
         <div class="container">
-            <h1>News website or something</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#sports" title="Go to sports section">Sports</a>
-                    </li>
-                    <li>
-                        <a href="#economy" title="Go to economy section">Economy</a>
-                    </li>
-                    <li>
-                        <a href="#eichi" title="Go to section on Eichi Tenshouin">Eichi</a>
-                    </li>
-                    <li>
-                        <a href="#nrc" title="Go to section on Night Raven College">NRC</a>
-                    </li>
-                </ul>
-            </nav>
+            <h1>Pokémon Gym Challenge 2024</h1>
+            <h3>Galar Region Sign-Ups</h3>
+            <section>
+                <!-- note: i decided against using the placeholder attribute because not all screen readers can read it -->
+                <form action="/" method="post" id="poke-form">
+                    <label for="name">How would you like to be called?<input type="text" id="name" autocomplete="off" required><br></label>
+                    <label for="age">
+                        How old are you? 
+                        <input type="number" id="age" autocomplete="off" required>
+                        <span id="notice-false">Please note that your shirt number should be higher than your age.</span><br>
+                    </label>
+                    <label for="shirtnum">What number would you like to have on the back of your shirt?<input type="number" id="shirtnum" required><br></label>
+                    <label for="reason">Please write down your reason for joining the Challenge below! (Optional)<textarea id="reason"></textarea><br></label>
+                    <button type="submit" id="btn-send" disabled>send application</button>
+                    <p id="notice-scss"></p><br>
+                </section>
+            </form>
         </div>
-    </header>
-    <section id="sports">
-        <div class="container">
-            <h2>Esportes</h2>
-            <div class="articles">
-                <article>
-                    <div class="image">
-                        <img src="./imagens/futebol.jpg" alt="Soccer ball on soccer field" />
-                    </div>
-                    <header>
-                        <time class="creation-date">06/06/2024 at 2:53PM</time>
-                    </header>
-                    <h3>The ball went in! Yay!</h3>
-                    <div class="spacer"></div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Read the full article">Read more</a>
-                </article>
-                <article>
-                    <div class="image">
-                        <img src="./imagens/futebol-americano.jpg" alt="American football player running while holding a ball" />
-                    </div>
-                    <header>
-                        <time class="creation-date">06/06/2024 at 2:53PM</time>
-                    </header>
-                    <h3>Let's pay attention to Palestine instead of Superbowl</h3>
-                    <div class="spacer"></div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Read the full article">Read more</a>
-                </article>
-                <article>
-                    <div class="image">
-                        <img src="./imagens/basquete.jpg" title="Photograph of basketball court" />
-                    </div>
-                    <header>
-                        <time class="creation-date">06/06/2024 at 2:53PM</time>
-                    </header>
-                    <h3>NBA to have another Space Jam collab?</h3>
-                    <div class="spacer"></div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Read the full article">Read more</a>
-                </article>
-                <article>
-                    <div class="image">
-                        <img src="./imagens/basquete.jpg" title="Photograph of basketball court" />
-                    </div>
-                    <header>
-                        <time class="creation-date">06/06/2024 at 2:53PM</time>
-                    </header>
-                    <h3>Some other NBA news</h3>
-                    <div class="spacer"></div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Read the full article">Read more</a>
-                </article>
-            </div>
-        </div>
-    </section>
-    <div class="spacer"></div>
-    <section id="economy">
-        <div class="container">
-            <h2>Economia</h2>
-            <div class="articles">
-                <article>
-                    <div class="image">
-                        <img src="./imagens/dolares.jpg" alt="Photograph of several dollar bills up close" />
-                    </div>
-                    <header>
-                        <time class="creation-date">06/06/2024 at 2:53PM</time>
-                    </header>
-                    <h3>Why is the Dollar so important, anyway?</h3>
-                    <div class="spacer"></div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Read the full article">Read more</a>
-                </article>
-                <article>
-                    <div class="image">
-                        <img src="./imagens/euro.jpg" alt="Photograph of several different euro bills, up close" />
-                    </div>
-                    <header>
-                        <time class="creation-date">06/06/2024 at 2:53PM</time>
-                    </header>
-                    <h3>Why do british pounds even exist still?</h3>
-                    <div class="spacer"></div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Read the full article">Read more</a>
-                </article>
-                <article>
-                    <div class="image">
-                        <img src="./imagens/petroleo.jpg" alt="Petroleum extraction" />
-                    </div>
-                    <header>
-                        <time class="creation-date">06/06/2024 at 2:53PM</time>
-                    </header>
-                    <h3>Oh wow crude oil prices are going up who could have guessed</h3>
-                    <div class="spacer"></div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Read the full article">Read more</a>
-                </article>
-            </div>
-        </div>
-    </section>
-    <div class="spacer"></div>
-    <section id="eichi">
-        <div class="container">
-            <h2>On Tenshouin Eichi</h2>
-            <div class="articles">
-                <article>
-                    <div class="image">
-                        <img src="./imagens/(A_Breath_of_Spring_Air)_Eichi_Tenshouin_CG.png" alt="blond anime boy laying on his bed" />
-                    </div>
-                    <header>
-                        <time class="creation-date">06/06/2024 at 2:53PM</time>
-                    </header>
-                    <h3>Cutest Boy of All Time</h3>
-                    <p>
-                        22 year old found sobbing at their own home, staring at a picture of Eichi Tenshouin, a major antagonist in the idol-raising game Ensemble Stars. Scientist seek to figure out what exactly makes this boy so attractive, even though he's just a png, while marketing teams try...
-                    </p>
-                    <a href="#" title="Read the full article">Read more</a>
-                </article>
-                <article>
-                    <div class="image">
-                        <img src="./imagens/(A_Play_That_Burns_the_Night_Sky)_Eichi_Tenshouin_CG.png" alt="blond anime boy waving his hand from inside a car" />
-                    </div>
-                    <header>
-                        <time class="creation-date">06/06/2024 at 2:53PM</time>
-                    </header>
-                    <h3>He Did It Again</h3>
-                    <p>
-                        Eichi Tenshouin does it again as the gods of gacha shine rainbow to Rio Moreira, 22 year old freelancer and avid Eichi Enthusiast. Upon being asked, Rio said it "had been a long time since [they] last saw [their] boy." While we don't know what this means, we...
-                    </p>
-                    <a href="#" title="Read the full article">Read more</a>
-                </article>
-                <article>
-                    <div class="image">
-                        <img src="./imagens/(Gunman_of_Dusk)_Eichi_Tenshouin_Frameless_Bloomed.png" title="blond anime boy holding a revolver" />
-                    </div>
-                    <header>
-                        <time class="creation-date">06/06/2024 at 2:53PM</time>
-                    </header>
-                    <h3>Are Guns Bad?</h3>
-                    <p>
-                        Not if it's Eichi Tenshouin holding them! Several accounts from online sources indicate that teenagers are more likely to accept the presence of gun violence in situations where no one is actually getting hurt. Some even urge authorities to hurry up and get guns into TV and out of schools while...
-                    </p>
-                    <a href="#" title="Read the full article">Read more</a>
-                </article>
-            </div>
-        </div>
-    </section>
-    <div class="spacer"></div>
-    <section id="nrc">
-        <div class="container">
-            <h2>Night Raven College</h2>
-            <div class="articles">
-                <article>
-                    <div class="image">
-                        <img src="./imagens/Card_Leona_SSR_Kingly_Garb.png" alt="anime boy sitting on throne. there is fine around him, he has long brown hair, dark skin, green eyes and lion ears and tail" />
-                    </div>
-                    <header>
-                        <time class="creation-date">06/06/2024 at 2:53PM</time>
-                    </header>
-                    <h3>"Tamashina-Mina" Event Delayed Again</h3>
-                    <p>
-                        Leona fans are once again thrown into waiting hell as the Tamashina-Mina event goes into it's fourth delay. This time, however, with a twist: Leona's birthday banner is also in July. Fans speculate...
-                    </p>
-                    <a href="#" title="Read the full article">Read more</a>
-                </article>
-                <article>
-                    <div class="image">
-                        <img src="./imagens/Card_Jade_SR_Apprentice_Chef_Groovy.png" alt="anime boy with light skin, teal hair and mismatched eyes. he is holding several mushrooms with a crazed expression as a ghost watches with concern." />
-                    </div>
-                    <header>
-                        <time class="creation-date">06/06/2024 at 2:53PM</time>
-                    </header>
-                    <h3>When is Jade Getting his Clubwear SSR?</h3>
-                    <p>
-                        Everybody knows that Jade Leech is the president, founder and single member of the Mountain Lovers Club. Initially this seemed like a joke, but after Vargas Camp 2, it's quickly becoming clear...
-                    </p>
-                    <a href="#" title="Read the full article">Read more</a>
-                </article>
-                <article>
-                    <div class="image">
-                        <img src="./imagens/Card_Ruggie_SSR_Club_Wear.png" title="a character card of an anime boy. he has light skin, dirty blond hair, hyena ears and blue eyes." />
-                    </div>
-                    <header>
-                        <time class="creation-date">06/06/2024 at 2:53PM</time>
-                    </header>
-                    <h3>The Boyish Charm of Ruggie Bucchi</h3>
-                    <p>
-                        Between the ever-so-popular Leona and the tallest of the freshmen, Jeck, Ruggie seems like the type of lackey character most people quickly dismiss. But his charm shouldn't be...
-                    </p>
-                    <a href="#" title="Read the full article">Read more</a>
-                </article>
-            </div>
-        </div>
-    </section>
+    </main>
+    <footer></footer>
+    <script src="main.js"></script>
 </body>
 </html>

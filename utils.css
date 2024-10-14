@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    /* variables */
+    --slate-50: #f8fafc;
+    --slate-200: #e2e8f0;
+    --slate-400: #94a3b8;
+    --slate-600: #475569;
+    --slate-800: #1e293b;
+    --rose-500-opct: rgba(244, 63, 93, 0.41);
+    --rose-500: #f43f5e;
+    --rose-700: #be123c;
+    --geen-500-opct: rgba(33, 196, 93, 0.41);
+    --geen-500: #22c55e;
+    --geen-700: #15803d;
+    --blue-800: #1e40af;
+    --yellow-500: #eab308;
+}
+
+.container {
+    margin: 80px auto;
+    max-width: 640px;
+    width: 100%;
+}
+
+/* Disabled number input mods */
+/* Chromium etc and Safari */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input, textarea, button {
+    display: block;
+    padding: 8px;
+    margin-top: 4px;
+    width: 100%;
+    resize: none;
+}
+
