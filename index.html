@@ -3,34 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="utils.css">
-    <title>Pokémon Gym Challenge 2024 - Galar Region</title>
+    <title>JQuery Exercise</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./utils.css">
 </head>
 <body>
-    <header></header>
     <main>
-        <div class="container">
-            <h1>Pokémon Gym Challenge 2024</h1>
-            <h3>Galar Region Sign-Ups</h3>
-            <section>
-                <!-- note: i decided against using the placeholder attribute because not all screen readers can read it -->
-                <form action="/" method="post" id="poke-form">
-                    <label for="name">How would you like to be called?<input type="text" id="name" autocomplete="off" required><br></label>
-                    <label for="age">
-                        How old are you? 
-                        <input type="number" id="age" autocomplete="off" required>
-                        <span id="notice-false">Please note that your shirt number should be higher than your age.</span><br>
-                    </label>
-                    <label for="shirtnum">What number would you like to have on the back of your shirt?<input type="number" id="shirtnum" required><br></label>
-                    <label for="reason">Please write down your reason for joining the Challenge below! (Optional)<textarea id="reason"></textarea><br></label>
-                    <button type="submit" id="btn-send" disabled>send application</button>
-                    <p id="notice-scss"></p><br>
-                </section>
+        <section class="container">
+            <h1>Your Least Favorite To-Do List</h1>
+            <h4 class="task-label">What do you have to do?</h4>
+            <form id="form">
+                <input type="text" id="task">
+                <button>Add +</button>
             </form>
-        </div>
+            <hr></hr>
+        </section>
+        <section class="container">
+            <h2>Stupid Loser Tasks</h2>
+            <ul>
+            </ul>
+        </section>
     </main>
-    <footer></footer>
-    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>

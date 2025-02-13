@@ -1,66 +1,25 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 10px 0;
 }
 
-/* <uniquifier>: Use a unique and descriptive class name 
-<weight>: Use a value from 100 to 900 */
-
-body {
-    font-family: "Inter", sans-serif;
-    background-color: var(--slate-50);
+h4 {
+    text-align: center;
 }
 
-h1, h2, h3 {
-    margin-bottom: .6em;
+form {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 20px auto;
 }
 
-input, textarea {
-    background-color: var(--slate-200);
-    outline-style: none;
-    border: solid 1px var(--slate-600);
-    border-radius: 3px;
+form button {
+    padding: 5px;
+    cursor: pointer;
 }
 
-#notice-false {
-    display: none;
-    color:var(--rose-700);
-    background-color:var(--rose-500-opct);
-    border: 2px solid var(--rose-700);
-    border-radius: 4px;
-}
-
-#notice-true {
-    display: none;
-    color:var(--geen-700);
-    background-color:var(--geen-500-opct);
-    border: 2px solid var(--geen-700);
-    border-radius: 4px;
-    margin-top: 20px;
-    padding: 12px;
-}
-
-.notice {
-    padding: 10px;
-    margin-bottom: 5px;
-    font-size: .8em;
-    font-weight: 600;
-    font-style: italic;
-    border-radius: 4px;
-}
-
-textarea {
-    height: 80px;
-}
-
-button {
-    background-color: var(--blue-800);
-    color: var(--slate-50);
-    font-weight: 600;
-    text-transform: uppercase;
-    font-style: italic;
-    border: none;
-    box-shadow: 6px 5px 0 0 var(--yellow-500);
+ul li {
+    cursor: pointer;
 }
