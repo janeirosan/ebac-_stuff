@@ -15,3 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 - Removed test files from main
+
+## [0.0.10] - 2025-03-25
+### Added
+- New branches added for exercises
