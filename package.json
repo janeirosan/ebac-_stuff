@@ -1,0 +1,21 @@
+{
+  "name": "exercicio_sass",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/janeirosan/ebac-_stuff#readme",
+  "bugs": {
+    "url": "https://github.com/janeirosan/ebac-_stuff/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janeirosan/ebac-_stuff.git"
+  },
+  "license": "ISC",
+  "author": "rio",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass exercicio_sass/scss:exercicio_sass/css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
