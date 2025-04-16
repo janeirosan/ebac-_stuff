@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","D:/Bibliotecas/Documentos/2%20school/2%20other%20courses/front-end/M16%20-%20Automatize%20tarefas%20com%20Gulp/m16/source/styles/vars.scss"],"names":[],"mappings":"AAEA;EACI,kBCHM","sourcesContent":["@use 'vars';\r\n\r\nbody {\r\n    background-color: vars.$mainClr;\r\n}","$mainClr: gray;"],"file":"../main.css"}
