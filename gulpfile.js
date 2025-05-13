@@ -15,14 +15,15 @@ function compileSass() {
     .pipe(sourceMaps.init())
     .pipe(sass())
     .pipe(sourceMaps.write('./maps'))
-        .pipe(gulp.dest('./build/styles'));
+    .pipe(gulp.dest('./build/styles'));
     }
     
     async function imgSquash() {
         const imagemin = (await import('gulp-imagemin')).default;
-        return gulp.src('./source/images/*') 
-        .pipe(imagemin()) 
-    .pipe(gulp.dest('./build/images'))
+        return gulp.src('./source/images/*')
+        .pipe(imagemin.init())
+        .pipe(imagemin())
+        .pipe(gulp.dest('./build/images'))
 }
 
 function gulpDef(cb) {
