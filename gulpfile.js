@@ -35,7 +35,7 @@ function gulpDef(cb) {
     cb();
 }
 
-
+// tentei mudar para gulpDef, encompassando as outras tasks dentro dele e pra ver se dá certo
 exports.default = gulpDef;
 exports.sass = compileSass;
 exports.watch = function() {
