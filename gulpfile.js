@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const sourceMaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
-const imagemin = require('imagemin');
+const imagemin = require('gulp-imagemin');
 
 function compressJS() {
     return gulp.src('./source/scripts/*.js')
@@ -20,7 +20,6 @@ function compileSass() {
 
 function imgSquash() {
         return gulp.src('./source/images/*')
-        .pipe(imagemin.init())
         .pipe(imagemin())
         .pipe(gulp.dest('./build/images'),  {encoding: false })
 }
