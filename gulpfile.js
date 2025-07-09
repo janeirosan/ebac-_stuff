@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const sourceMaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
-
+const imagemin = require('imagemin');
 
 function compressJS() {
     return gulp.src('./source/scripts/*.js')
@@ -17,33 +17,16 @@ function compileSass() {
     .pipe(sourceMaps.write('./maps'))
     .pipe(gulp.dest('./build/styles'));
     }
-    
-    async function imgSquash() {
-        const imagemin = (await import('gulp-imagemin')).default;
+
+function imgSquash() {
         return gulp.src('./source/images/*')
         .pipe(imagemin.init())
         .pipe(imagemin())
-        .pipe(gulp.dest('./build/images'))
+        .pipe(gulp.dest('./build/images'),  {encoding: false })
 }
 
-function gulpDef(cb) {
-    gulp.task("imgSquash", imgSquash);
-    
-    gulp.task("watch", () => {
-        gulp.watch("./source/images/*", imgSquash)
-    });
-
-    cb();
-}
-
-// tentei mudar para gulpDef, encompassando as outras tasks dentro dele e pra ver se dá certo
-exports.default = gulpDef;
-exports.sass = compileSass;
-exports.watch = function() {
+exports.default = function() {
     gulp.watch('./source/styles/*.scss', {ignoreInitial: false}, gulp.series(compileSass))
+    gulp.watch('./source/scripts/*.js', {ignoreInitial: false}, gulp.series(compressJS))
+    gulp.watch('./source/images/*', {ignoreInitial: false}, gulp.series(imgSquash))
 }
-exports.compressJS = compressJS;
-
-return gulp.src('./source/images/*', { 
-    encoding: false 
-})
