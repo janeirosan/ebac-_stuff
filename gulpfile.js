@@ -20,8 +20,15 @@ function compileSass() {
 
 function imgSquash() {
         return gulp.src('./source/images/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('./build/images'),  {encoding: false })
+        .pipe(imagemin([
+            imagemin.mozjpeg({
+                progressive: true
+            }),
+            imagemin.optipng({
+                optimizationLevel: 5
+            })
+        ]))
+        .pipe(gulp.dest('./build/images'),{encoding: false })
 }
 
 exports.default = function() {
